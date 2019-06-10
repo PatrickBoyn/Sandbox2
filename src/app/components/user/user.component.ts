@@ -16,12 +16,4 @@ export class UserComponent {
   };
 
   constructor() {}
-
-  sayHello() {
-    console.log(`Hello ${this.firstName}`);
-  }
-
-  hasBirtday() {
-    this.age += 1;
-  }
 }
