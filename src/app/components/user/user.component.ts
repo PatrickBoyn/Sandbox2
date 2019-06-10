@@ -11,5 +11,9 @@ export class UserComponent {
   age: number;
   address: object;
 
-  constructor() {}
+  constructor() {
+    this.firstName = 'John';
+    this.lastName = 'Doe';
+    this.age = 30;
+  }
 }
