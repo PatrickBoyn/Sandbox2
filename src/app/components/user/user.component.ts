@@ -9,6 +9,7 @@ export class UserComponent {
   firstName = 'John';
   lastName = 'Doe';
   age = 30;
+  address = {};
 
   constructor() {
     console.log('Hello User...');
