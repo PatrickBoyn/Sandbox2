@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-user',
-  template: 'hh2>John Doe</h2>'
+  template: '<h2>John Doe</h2>'
 })
-class UserComponent {}
+export class UserComponent {}
