@@ -12,5 +12,10 @@ export class UserComponent {
 
   constructor() {
     console.log('Hello User...');
+    this.sayHello();
+  }
+
+  sayHello() {
+    console.log(`Hello ${this.firstName}`);
   }
 }
