@@ -18,4 +18,6 @@ export class UserComponent {
   sayHello() {
     console.log(`Hello ${this.firstName}`);
   }
+
+  hasBirtday() {}
 }
