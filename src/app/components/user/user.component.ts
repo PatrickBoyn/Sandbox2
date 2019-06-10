@@ -15,13 +15,7 @@ export class UserComponent {
     state: 'MA'
   };
 
-  constructor() {
-    console.log('Hello User...');
-    this.sayHello();
-    console.log(this.age);
-    this.hasBirtday();
-    console.log(this.age);
-  }
+  constructor() {}
 
   sayHello() {
     console.log(`Hello ${this.firstName}`);
