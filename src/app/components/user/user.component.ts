@@ -13,11 +13,14 @@ export class UserComponent {
   constructor() {
     console.log('Hello User...');
     this.sayHello();
+    console.log(this.age);
   }
 
   sayHello() {
     console.log(`Hello ${this.firstName}`);
   }
 
-  hasBirtday() {}
+  hasBirtday() {
+    this.age += 1;
+  }
 }
