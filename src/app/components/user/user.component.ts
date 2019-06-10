@@ -15,5 +15,10 @@ export class UserComponent {
     this.firstName = 'John';
     this.lastName = 'Doe';
     this.age = 30;
+    this.address = {
+      street: '50 Main st',
+      city: 'Boston',
+      state: 'MA'
+    };
   }
 }
