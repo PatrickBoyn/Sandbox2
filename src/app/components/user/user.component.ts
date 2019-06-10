@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./user.component.sass']
 })
 export class UserComponent {
+  user: {
+    firstName: string
+    lastName: string
+    age: number
+    address: {
+      street: string
+      city: string
+      state: string
+    }
+  };
   constructor() {}
 }
