@@ -9,4 +9,6 @@ export class UserComponent {
   firstName = 'John';
   lastName = 'Doe';
   age = 30;
+
+  constructor() {}
 }
