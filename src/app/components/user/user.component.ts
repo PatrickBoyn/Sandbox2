@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.sass']
 })
-export class UserComponent {}
+export class UserComponent {
+  firstName = 'John';
+  lastName = 'Doe';
+  age = 30;
+}
