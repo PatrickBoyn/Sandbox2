@@ -10,5 +10,7 @@ export class UserComponent {
   lastName = 'Doe';
   age = 30;
 
-  constructor() {}
+  constructor() {
+    console.log('Hello User...');
+  }
 }
