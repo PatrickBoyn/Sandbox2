@@ -16,5 +16,16 @@ export class UserComponent {
       state: string
     }
   };
-  constructor() {}
+  constructor() {
+    this.user = {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 30,
+      address: {
+        street: '50 Main St',
+        city: 'Boston',
+        state: 'MA'
+      }
+    };
+  }
 }
