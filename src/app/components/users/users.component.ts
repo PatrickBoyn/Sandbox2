@@ -46,5 +46,7 @@ export class UsersComponent implements OnInit {
     ];
   }
 
-  addUser(user: User) {}
+  addUser(user: User) {
+    this.users.push(user);
+  }
 }
