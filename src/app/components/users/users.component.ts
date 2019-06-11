@@ -14,50 +14,52 @@ export class UsersComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    setTimeout(() => {}, 20000);
-    this.users = [
-      {
-        firstName: 'John',
-        lastName: 'Doe',
-        age: 30,
-        address: {
-          street: '50 Main St',
-          city: 'Boston',
-          state: 'MA'
+    setTimeout(() => {
+      this.users = [
+        {
+          firstName: 'John',
+          lastName: 'Doe',
+          age: 30,
+          address: {
+            street: '50 Main St',
+            city: 'Boston',
+            state: 'MA'
+          }
+        },
+        {
+          firstName: 'Jane',
+          lastName: 'Doe',
+          age: 25,
+          address: {
+            street: '20 School St',
+            city: 'Lynn',
+            state: 'MA'
+          }
+        },
+        {
+          firstName: 'Eric',
+          lastName: 'Moyen',
+          age: 18,
+          address: {
+            street: '55 Mill St',
+            city: 'Miami',
+            state: 'FL'
+          }
         }
-      },
-      {
-        firstName: 'Jane',
-        lastName: 'Doe',
+      ];
+
+      this.addUser({
+        firstName: 'Bob',
+        lastName: 'Cratchet',
         age: 25,
         address: {
-          street: '20 School St',
-          city: 'Lynn',
-          state: 'MA'
+          street: '12 Wake St',
+          city: 'London',
+          state: 'UK'
         }
-      },
-      {
-        firstName: 'Eric',
-        lastName: 'Moyen',
-        age: 18,
-        address: {
-          street: '55 Mill St',
-          city: 'Miami',
-          state: 'FL'
-        }
-      }
-    ];
-    this.showExtended = false;
-    this.addUser({
-      firstName: 'Bob',
-      lastName: 'Cratchet',
-      age: 25,
-      address: {
-        street: '12 Wake St',
-        city: 'London',
-        state: 'UK'
-      }
-    });
+      });
+      this.loaded = true;
+    }, 20000);
   }
 
   addUser(user: User) {
