@@ -44,6 +44,17 @@ export class UsersComponent implements OnInit {
         }
       }
     ];
+
+    this.addUser({
+      firstName: 'Bob',
+      lastName: 'Cratchet',
+      age: 25,
+      address: {
+        street: '12 Wake St',
+        city: 'London',
+        state: 'UK'
+      }
+    });
   }
 
   addUser(user: User) {
