@@ -9,7 +9,9 @@ import { User } from '../../Models/User';
 export class UserComponent implements OnInit {
   user: User;
 
-  constructor() {
+  constructor() {}
+
+  ngOnInit() {
     this.user = {
       firstName: 'John',
       lastName: 'Doe',
@@ -21,6 +23,4 @@ export class UserComponent implements OnInit {
       }
     };
   }
-
-  ngOnInit() {}
 }
