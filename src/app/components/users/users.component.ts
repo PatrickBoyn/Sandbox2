@@ -22,6 +22,26 @@ export class UsersComponent implements OnInit {
           city: 'Boston',
           state: 'MA'
         }
+      },
+      {
+        firstName: 'Jane',
+        lastName: 'Doe',
+        age: 25,
+        address: {
+          street: '20 School St',
+          city: 'Lynn',
+          state: 'MA'
+        }
+      },
+      {
+        firstName: 'Eric',
+        lastName: 'Moyen',
+        age: 18,
+        address: {
+          street: '55 Mill St',
+          city: 'Miami',
+          state: 'FL'
+        }
       }
     ];
   }
