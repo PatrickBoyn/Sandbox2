@@ -59,7 +59,7 @@ export class UsersComponent implements OnInit {
         }
       });
       this.loaded = true;
-    }, 20000);
+    }, 2000);
   }
 
   addUser(user: User) {
