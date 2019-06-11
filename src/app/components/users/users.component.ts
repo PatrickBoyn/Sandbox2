@@ -7,11 +7,10 @@ import { User } from '../../Models/User';
   styleUrls: ['./users.component.sass']
 })
 export class UsersComponent implements OnInit {
+  constructor() {}
   users: User[];
   showExtended = true;
   loaded = false;
-
-  constructor() {}
 
   ngOnInit() {
     setTimeout(() => {
@@ -61,7 +60,6 @@ export class UsersComponent implements OnInit {
       this.loaded = true;
     }, 2000);
   }
-
   addUser(user: User) {
     this.users.push(user);
   }
