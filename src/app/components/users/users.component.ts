@@ -7,13 +7,22 @@ import { User } from '../../Models/User';
   styleUrls: ['./users.component.sass']
 })
 export class UsersComponent implements OnInit {
-  users: User;
+  users: User[];
 
-  constructor() {
-    console.log('From the constructor.');
-  }
+  constructor() {}
 
   ngOnInit() {
-    console.log('Init....');
+    this.users = [
+      {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 30,
+        address: {
+          street: '50 Main St',
+          city: 'Boston',
+          state: 'MA'
+        }
+      }
+    ];
   }
 }
