@@ -6,16 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./user.component.sass']
 })
 export class UserComponent {
-  user: {
-    firstName: string
-    lastName: string
-    age: number
-    address: {
-      street: string
-      city: string
-      state: string
-    }
-  };
+  user: User;
   constructor() {
     this.user = {
       firstName: 'John',
@@ -30,4 +21,13 @@ export class UserComponent {
   }
 }
 
-interface User {}
+interface User {
+  firstName: string;
+  lastName: string;
+  age: number;
+  address: {
+    street: string
+    city: string
+    state: string
+  };
+}
