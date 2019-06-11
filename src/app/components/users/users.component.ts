@@ -14,6 +14,7 @@ export class UsersComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    setTimeout(() => {}, 20000);
     this.users = [
       {
         firstName: 'John',
