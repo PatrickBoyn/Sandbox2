@@ -1,7 +1,9 @@
 <h2 class="users-heading">Users</h2>
 <div class="container">
   <ul *ngIf="loaded && users?.length > 0">
-    <button class="add-user__button">Add New User</button>
+    <button [disabled]="!enableAdd" class="add-user__button">
+      Add New User
+    </button>
     <li class="card" *ngFor="let user of users">
       <h3 class="card__header card__details">
         {{ user.firstName }} {{ user.lastName }}
