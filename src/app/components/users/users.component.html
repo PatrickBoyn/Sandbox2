@@ -1,6 +1,6 @@
 <h2 class="users-heading">Users</h2>
-<div class="card">
-  <ul *ngIf="loaded && users?.length > 0">
+<ul *ngIf="loaded && users?.length > 0">
+  <div class="card">
     <li *ngFor="let user of users">
       <h3 class="">{{ user.firstName }} {{ user.lastName }}</h3>
       <ul *ngIf="showExtended && user.age && user.address">
@@ -11,8 +11,8 @@
         </li>
       </ul>
     </li>
-  </ul>
-</div>
+  </div>
+</ul>
 
 <h4 *ngIf="users.length == 0">No users found</h4>
 
