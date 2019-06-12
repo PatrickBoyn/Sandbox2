@@ -11,7 +11,7 @@ export class UsersComponent implements OnInit {
   users: User[];
   showExtended = true;
   loaded = false;
-  enableAdd = true;
+  enableAdd = false;
 
   ngOnInit() {
     setTimeout(() => {
