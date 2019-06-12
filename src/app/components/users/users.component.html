@@ -1,16 +1,18 @@
 <h2 class="users-heading">Users</h2>
-<ul class="card" *ngIf="loaded && users?.length > 0">
-  <li *ngFor="let user of users">
-    <h3 class="card__heading">{{ user.firstName }} {{ user.lastName }}</h3>
-    <ul *ngIf="showExtended && user.age && user.address">
-      <li class="card__details">Age: {{ user.age }}</li>
-      <li class="card__details">
-        Address: {{ user.address.street }} {{ user.address.city }}
-        {{ user.address.state }}
-      </li>
-    </ul>
-  </li>
-</ul>
+<div class="card">
+  <ul *ngIf="loaded && users?.length > 0">
+    <li *ngFor="let user of users">
+      <h3 class="">{{ user.firstName }} {{ user.lastName }}</h3>
+      <ul *ngIf="showExtended && user.age && user.address">
+        <li class="">Age: {{ user.age }}</li>
+        <li class="">
+          Address: {{ user.address.street }} {{ user.address.city }}
+          {{ user.address.state }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
 <h4 *ngIf="users.length == 0">No users found</h4>
 
