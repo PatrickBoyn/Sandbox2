@@ -24,7 +24,8 @@ export class UsersComponent implements OnInit {
             street: '50 Main St',
             city: 'Boston',
             state: 'MA'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/3'
         },
         {
           firstName: 'Jane',
@@ -34,7 +35,8 @@ export class UsersComponent implements OnInit {
             street: '20 School St',
             city: 'Lynn',
             state: 'MA'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/4'
         },
         {
           firstName: 'Eric',
@@ -44,7 +46,8 @@ export class UsersComponent implements OnInit {
             street: '55 Mill St',
             city: 'Miami',
             state: 'FL'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/5'
         }
       ];
 
