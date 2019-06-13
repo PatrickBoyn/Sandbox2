@@ -25,7 +25,8 @@ export class UsersComponent implements OnInit {
             city: 'Boston',
             state: 'MA'
           },
-          image: 'http://placeimg.com/200/200/any"'
+          image: 'http://placeimg.com/200/200/any"',
+          isActive: true
         },
         {
           firstName: 'Jane',
@@ -36,7 +37,8 @@ export class UsersComponent implements OnInit {
             city: 'Lynn',
             state: 'MA'
           },
-          image: 'http://placeimg.com/200/200/any/"'
+          image: 'http://placeimg.com/200/200/any/"',
+          isActive: true
         },
         {
           firstName: 'Eric',
@@ -47,13 +49,15 @@ export class UsersComponent implements OnInit {
             city: 'Miami',
             state: 'FL'
           },
-          image: 'http://placeimg.com/200/200/any"'
+          image: 'http://placeimg.com/200/200/any"',
+          isActive: true
         }
       ];
 
       this.addUser({
         firstName: 'Bob',
-        lastName: 'Cratchet'
+        lastName: 'Cratchet',
+        isActive: false
       });
       this.loaded = true;
     }, 2000);
