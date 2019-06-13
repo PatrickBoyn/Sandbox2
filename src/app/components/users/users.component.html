@@ -12,7 +12,7 @@
           </h3>
         </div>
         <div class="col-1-of-2">
-          <img [src]="user.image" alt="User Image" />
+          <img *ngIf="user.image" [src]="user.image" alt="User Image" />
         </div>
       </div>
       <ul
