@@ -13,6 +13,7 @@ export class UsersComponent implements OnInit {
   loaded = false;
   enableAdd = false;
   currentClasses = {};
+  currentStyles = {};
 
   ngOnInit() {
     setTimeout(() => {
