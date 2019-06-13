@@ -9,10 +9,9 @@ import { User } from '../../Models/User';
 export class UsersComponent implements OnInit {
   constructor() {}
   users: User[];
-  showExtended = true;
+  showExtended = false;
   loaded = false;
   enableAdd = false;
-  currentClasses = {};
   currentStyles = {};
 
   ngOnInit() {
@@ -63,8 +62,16 @@ export class UsersComponent implements OnInit {
       });
       this.loaded = true;
     }, 2000);
+
+    this.setCurrentStyles();
   }
   addUser(user: User) {
     this.users.push(user);
+  }
+
+  setCurrentStyles() {
+    this.currentStyles = {
+      'margin-right': this.showExtended ? '30px' : '0'
+    };
   }
 }
