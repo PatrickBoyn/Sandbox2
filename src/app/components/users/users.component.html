@@ -1,7 +1,11 @@
 <h2 class="users-heading">Users</h2>
 <div class="container">
   <ul *ngIf="loaded && users?.length > 0">
-    <button [disabled]="!enableAdd" class="add-user__button">
+    <button
+      [disabled]="!enableAdd"
+      [ngClass]="currentClasses"
+      class="add-user__button"
+    >
       Add New User
     </button>
     <li class="card" *ngFor="let user of users">
