@@ -66,13 +66,5 @@ export class UsersComponent implements OnInit {
   }
   addUser(user: User) {
     this.users.push(user);
-
-    this.setCurrentClasses();
-  }
-
-  setCurrentClasses() {
-    this.currentClasses = {
-      'add-user__disabled': this.enableAdd
-    };
   }
 }
