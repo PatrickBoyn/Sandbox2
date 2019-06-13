@@ -12,6 +12,7 @@ export class UsersComponent implements OnInit {
   showExtended = true;
   loaded = false;
   enableAdd = false;
+  currentClasses = {};
 
   ngOnInit() {
     setTimeout(() => {
@@ -65,4 +66,6 @@ export class UsersComponent implements OnInit {
   addUser(user: User) {
     this.users.push(user);
   }
+
+  setCurrentClasses() {}
 }
