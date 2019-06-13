@@ -11,7 +11,7 @@
     <li class="card" *ngFor="let user of users">
       <div class="row" [class.is-active]="user.isActive">
         <div class="col-1-of-2">
-          <h3 class="card__header card__details">
+          <h3 class="card__header card__details" [ngStyle]="currentStyles">
             {{ user.firstName }} {{ user.lastName }}
           </h3>
         </div>
