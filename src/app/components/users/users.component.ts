@@ -9,7 +9,7 @@ import { User } from '../../Models/User';
 export class UsersComponent implements OnInit {
   constructor() {}
   users: User[];
-  showExtended = false;
+  showExtended = true;
   loaded = false;
   enableAdd = false;
   currentStyles = {};
@@ -71,7 +71,7 @@ export class UsersComponent implements OnInit {
 
   setCurrentStyles() {
     this.currentStyles = {
-      'margin-right': this.showExtended ? '30px' : '0'
+      'margin-right': this.showExtended ? '30px' : '30px'
     };
   }
 }
